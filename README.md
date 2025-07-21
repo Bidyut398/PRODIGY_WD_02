@@ -23,4 +23,6 @@ Display:
 - The timer shows hours, minutes, seconds, and milliseconds (e.g., 00:00:10.460).
 - Lap times are listed below the controls (e.g., Lap 1: 00:00:03.120, Lap 2: 00:00:04.190).
 
+![image alt]
+
 
