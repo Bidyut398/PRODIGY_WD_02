@@ -23,6 +23,6 @@ Display:
 - The timer shows hours, minutes, seconds, and milliseconds (e.g., 00:00:10.460).
 - Lap times are listed below the controls (e.g., Lap 1: 00:00:03.120, Lap 2: 00:00:04.190).
 
-![image alt]
+![image alt](https://github.com/Bidyut398/PRODIGY_WD_02/blob/800e3ed9575d976f72766d95f0e121306adbaec9/Screenshot%202025-07-21%20220810.png)
 
 
