@@ -1,0 +1,110 @@
+/* Center the content vertically and horizontally with a modern gradient background */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(333deg,rgb(30, 46, 226),rgb(0, 0, 0),black);
+    color: #5015be;
+    overflow: hidden;
+}
+
+/* Style for the time display with glassmorphism effect */
+#display {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1.6px solid rgba(32, 8, 212, 0.427);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#display:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for control buttons */
+.controls {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styling with vibrant gradients and animations */
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #130194, #8c0187);
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #4716f9, #ea580c);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the lap times container with scrollable glassmorphism */
+#laps {
+    width: 350px;
+    max-height: 250px;
+    overflow-y: auto;
+    background: rgba(65, 49, 49, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Styling for individual lap entries with subtle animations */
+#laps div {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.1em;
+    transition: background 0.2s ease;
+}
+
+#laps div:hover {
+    background: linear-gradient(45deg,white,#000000);
+    border-radius: 5px;
+}
+
+/* Custom scrollbar for lap times */
+#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+#laps::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
